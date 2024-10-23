@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/circle-tick-svgrepo-com.svg" alt="Logo To-Do List">
+        </div>
+        <h1>Lista de Tareas</h1>
+        <nav class="menu">
+            <a href="#">Tareas Completadas</a>
+            <label for="modal-toggle" class="new-task">Nueva Tarea</label>
+            <a href="#">Configuraciones</a>
+        </nav>
+    </header>
+    <main>
+        <section class="tasks-board">
+            <div class="tasks-column todo-column">
+                <h2>Por Hacer</h2>
+                <div class="task-card high-priority">
+                    <h3>Finalizar Proyecto</h3>
+                    <p>Desarrollar la funcionalidad final.</p>
+                    <span>Vence: 24/10/2024</span>
+                    <div class="complete-wrapper">
+                        <input type="checkbox" id="task-1" class="complete-checkbox">
+                        <label for="task-1" class="complete-btn"></label>
+                    </div>
+                </div>
+                <div class="task-card medium-priority">
+                    <h3>Revisar documentación</h3>
+                    <p>Leer y corregir posibles errores.</p>
+                    <span>Vence: 27/10/2024</span>
+                    <div class="complete-wrapper">
+                        <input type="checkbox" id="task-2" class="complete-checkbox">
+                        <label for="task-2" class="complete-btn"></label>
+                    </div>
+                </div>
+                <div class="task-card low-priority">
+                    <h3>Limpiar el escritorio</h3>
+                    <p>Organizar los documentos y materiales.</p>
+                    <span>Vence: 29/10/2024</span>
+                    <div class="complete-wrapper">
+                        <input type="checkbox" id="task-4" class="complete-checkbox">
+                        <label for="task-4" class="complete-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks-column in-progress-column">
+                <h2>En Progreso</h2>
+                <div class="task-card low-priority">
+                    <h3>Organizar archivos</h3>
+                    <p>Reorganizar documentos del equipo.</p>
+                    <span>Vence: 30/10/2024</span>
+                    <div class="complete-wrapper">
+                        <input type="checkbox" id="task-3" class="complete-checkbox">
+                        <label for="task-3" class="complete-btn"></label>
+                    </div>
+                </div>
+                <div class="task-card medium-priority">
+                    <h3>Desarrollar presentación</h3>
+                    <p>Crear diapositivas para la reunión del viernes.</p>
+                    <span>Vence: 25/10/2024</span>
+                    <div class="complete-wrapper">
+                        <input type="checkbox" id="task-5" class="complete-checkbox">
+                        <label for="task-5" class="complete-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="completed-tasks">
+            <h2>Tareas Completadas</h2>
+            <div class="task-card completed">
+                <h3>Actualizar informes</h3>
+                <p>Los informes fueron actualizados correctamente.</p>
+                <span>Completada: 20/10/2024</span>
+            </div>
+            <div class="task-card completed">
+                <h3>Enviar correos</h3>
+                <p>Correos enviados a todos los miembros del equipo.</p>
+                <span>Completada: 22/10/2024</span>
+            </div>
+        </section>
+    </main>
+    <input type="checkbox" id="modal-toggle" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle" class="close">&times;</label>
+            <h2>Agregar Nueva Tarea</h2>
+            <input type="text" placeholder="Título de la tarea">
+            <textarea placeholder="Descripción de la tarea"></textarea>
+            <label for="modal-toggle">
+                <button>Agregar Tarea</button>
+            </label>
+        </div>
+    </div>
+    <footer>
+        <nav class="footer-menu">
+            <a href="#">
+                <img src="img/ajustes.png" alt="Ajustes" class="footer-icon">
+            </a>
+            <a href="#">
+                <img src="img/ayuda.png" alt="Ayuda" class="footer-icon">
+            </a>
+            <a href="#">
+                <img src="img/contacto.png" alt="Contacto" class="footer-icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
